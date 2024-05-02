@@ -1,0 +1,28 @@
+{
+  "author": {
+    "name": "ukorvl",
+    "email": "ukorotovskiy@gmail.com"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "MIT",
+  "name": "yuriykorotovskikh.com",
+  "version": "1.0.0",
+  "description": "100% SSG personal website",
+  "scripts": {
+    "build": "node scripts/build.js --outDir=build"
+  },
+  "dependencies": {
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "xml": "^1.0.1",
+    "yargs": "^17.7.2",
+    "zod": "^3.23.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.2",
+    "cssnano": "^7.0.1",
+    "postcss": "^8.4.38"
+  }
+}
