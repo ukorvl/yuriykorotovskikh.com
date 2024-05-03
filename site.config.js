@@ -85,8 +85,6 @@ const config = {
 	blog: {
 		// Directory for blog posts
 		postsDirectory: "content/posts",
-		// Posts files extension
-		fileExtension: ".md",
 		// Comments
 		comments: {
 			allow: false,
@@ -94,42 +92,20 @@ const config = {
 	},
 
 	// Pages settings
-	pages: [
-		{
-			title: "Blog",
-			slug: "blog",
-			template: "blog",
-			content: "content/pages/blog",
-		},
-		{
-			title: "Portfolio",
-			slug: "portfolio",
-			template: "portfolio",
-			content: "content/pages/portfolio",
-		},
-		{
-			title: "CV",
-			slug: "cv",
-			template: "cv",
-			content: "content/pages/cv",
-		},
-		{
-			title: "Contact",
-			slug: "contact",
-			template: "contact",
-			content: "content/pages/contact",
-		},
-	],
+	pages: {
+		// Directory for pages
+		pagesDirectory: "content/pages",
+	},
 
-  // Build settings
-  build: {
-    // Output directory
-    outDir: "build",
-    // Directory for static files
-    staticDir: "public",
-    // Clear output directory before build
-    clear: true,
-  },
+	// Build settings
+	build: {
+		// Output directory
+		outDir: "build",
+		// Directory for static files
+		staticDir: "public",
+		// Clear output directory before build
+		clear: true,
+	},
 };
 
 Object.freeze(config);
