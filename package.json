@@ -6,16 +6,20 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "type": "module",
   "license": "MIT",
   "name": "yuriykorotovskikh.com",
   "version": "1.0.0",
   "description": "100% SSG personal website",
   "scripts": {
-    "build": "node scripts/build.js --outDir=build"
+    "build": "node scripts/build.js --build.outDir=build"
   },
   "dependencies": {
+    "cli-color": "^2.0.4",
+    "deepmerge": "^4.3.1",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
+    "rimraf": "^5.0.5",
     "xml": "^1.0.1",
     "yargs": "^17.7.2",
     "zod": "^3.23.5"
